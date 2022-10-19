@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import io from "Socket.IO-client";
+import io from "socket.io-client";
 import { useRouter } from "next/router";
 import QRCode from "react-qr-code";
 

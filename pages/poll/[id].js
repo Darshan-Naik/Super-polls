@@ -107,7 +107,7 @@ export default function Home() {
             <div className="flex options">
               <label>options : </label>
               {options.map((option, index) => (
-                <div className="flex options-input">
+                <div className="flex options-input" key={option}>
                   <input
                     type="text"
                     className="input box"
@@ -154,7 +154,7 @@ export default function Home() {
         <ul className="flex options">
           {question?.options &&
             Object.keys(question?.options).map((key) => (
-              <li className="flex option-view">
+              <li className="flex option-view" key={key}>
                 <label for={key}>{key} : </label>
                 <progress id={key} max={max} value={question.options[key]}>
                   {question.options[key]}
